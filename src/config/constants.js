@@ -27,7 +27,17 @@ export const SIGN_UP_NAV_ITEMS = [
   { label: "Marketing", url: "#" },
   { label: "X for Business", url: "#" },
   { label: "Developers", url: "#" },
-  { label: "Directory", url: "#" },  
+  { label: "Directory", url: "#" },
   { label: "Settings", url: "#" },
+  { label: "©2025 M&M", url: "#" },
+];
+
+// RIGHT BAR
+export const RIGHT_BAR_FOTER = [
+  { label: "Terms of Service", url: "#" },
+  { label: "Privacy Policy", url: "#" },
+  { label: "Cookie Policy", url: "#" },
+  { label: "Accessibility", url: "#" },
+  { label: "Ads Info", url: "#" },
   { label: "©2025 M&M", url: "#" },
 ];
