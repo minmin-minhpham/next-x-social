@@ -1,5 +1,5 @@
 // AUTH
-export const SIGN_UP_NAV_ITEMS = [
+export const AUTH_NAV_ITEMS = [
   { label: "About", url: "#" },
   { label: "Download the X app", url: "#" },
   { label: "Grok", url: "#" },
