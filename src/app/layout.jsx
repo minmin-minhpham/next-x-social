@@ -12,17 +12,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "M&M DEV",
+  title: {
+    template: "%s / X",
+    default: "Welcome",
+  },
   description: "X clone",
 };
 
 export default function RootLayout({ children }) {
-  console.log("%cWarning!", "color: red; font-size: 30px; font-weight: bold;");
+  // console.log("%cWarning!", "color: red; font-size: 30px; font-weight: bold;");
 
-  console.log(
-    "%cThis browser feature is intended for developers. If someone told you to copy and paste something here, it is likely a scam and could compromise your security.",
-    "color: black; font-size: 16px;"
-  );
+  // console.log(
+  //   "%cThis browser feature is intended for developers. If someone told you to copy and paste something here, it is likely a scam and could compromise your security.",
+  //   "font-size: 16px;"
+  // );
 
   return (
     <html lang="en">

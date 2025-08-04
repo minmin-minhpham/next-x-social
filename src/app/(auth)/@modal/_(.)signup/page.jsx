@@ -1,26 +1,27 @@
 "use client";
-import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
 
-import { wait } from "@/lib/wait";
+import { useRouter } from "next/navigation";
+import dynamic from "next/dynamic";
+
 import Modal from "@/components/ui/modal/Modal";
+import { wait } from "@/lib/wait";
 import { LogoIcon } from "@/components/icons";
 
-const LoginForm = dynamic(
+const SignUpForm = dynamic(
   async () => {
     await wait(1000);
-    return import("@/components/auth/LoginForm");
+    return import("@/components/auth/SignUpForm");
   },
   {
     srr: false,
   }
 );
 
-export default function LoginPage() {
+export default function SignUpModal() {
   const router = useRouter();
 
   const handleCloseModal = () => {
-    router.replace("/");
+    router.back();
   };
 
   return (
@@ -43,8 +44,9 @@ export default function LoginPage() {
             <div className="flex-1" />
           </div>
         </Modal.header>
-
-        <LoginForm />
+        <Modal.body className="flex flex-col flex-1">
+          <SignUpForm />
+        </Modal.body>
       </Modal.content>
     </Modal>
   );

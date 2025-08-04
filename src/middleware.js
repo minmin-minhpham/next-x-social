@@ -22,20 +22,25 @@ export const config = {
 // }
 
 export function middleware(req) {
-  const url = req.nextUrl;
+  // const isToken = false;
+  // const path = req.nextUrl.pathname;
 
-  if (url.pathname === "/home") return NextResponse.redirect(new URL("/", req.url));
+  // // ROOT PATH (Trang chính)
+  // if (path === "/") {
+  //   if (!isToken) return NextResponse.rewrite(new URL("/welcome", req.url));
 
-  // const url = req.nextUrl;
-  // const token = req.cookies.get("token");
-
-  // if (url.pathname === "/" && token) {
-  //   url.pathname = "/app"; // 👈 trỏ về (app)/page.tsx
-  //   return NextResponse.rewrite(url);
+  //   return NextResponse.rewrite(new URL("/home", req.url));
   // }
 
-  // if (url.pathname === "/" && !token) {
-  //   url.pathname = "/auth"; // 👈 trỏ về (auth)/page.tsx
-  //   return NextResponse.rewrite(url);
+  // // HANDLE  ROUTE PROTECTED_ROUTES
+  // const protectedRoutes = ["/home", "/dashboard", "/profile"];
+  // const isProtectedRoute = protectedRoutes.includes(path);
+
+  // if (isProtectedRoute) {
+  //   if (isToken) return NextResponse.next();
+
+  //   const loginUrl = new URL('/login', req.url);
+  //   loginUrl.searchParams.set('redirect_after_login', path);
+  //   return NextResponse.redirect(loginUrl);
   // }
 }

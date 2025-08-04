@@ -1,8 +1,6 @@
 import { useState } from "react";
 
-import { MONTHS } from "@/config/constants";
-
-const MONTHS_WITH_30_DAYS = [4, 6, 9, 11];
+import { MONTHS, MONTHS_WITH_30_DAYS } from "@/config/constants";
 
 export default function DateSelect() {
   const [selectedMonth, setSelectedMonth] = useState("");
@@ -47,7 +45,7 @@ export default function DateSelect() {
   const days = Array.from(
     { length: getDaysInMonth(selectedMonth, selectedYear) },
     (_, i) => ({ label: i + 1, value: i + 1 })
-  );
+  );  
 
   const years = getSelectableYears(selectedMonth, selectedDay);
 

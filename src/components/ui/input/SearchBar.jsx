@@ -1,4 +1,4 @@
-import { ExploreIcon } from "../icons";
+import { ExploreIcon } from "@/components/icons";
 
 export default function SearchBar() {
   return (

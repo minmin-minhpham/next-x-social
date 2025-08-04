@@ -62,6 +62,8 @@ export const MONTHS = [
   { label: "December", value: "12" },
 ];
 
+export const MONTHS_WITH_30_DAYS = [4, 6, 9, 11];
+
 // LEFT_BAR
 export const NAV_ITEMS = [
   { id: 1, icon: HomeIcon, name: "Home", href: "/" },
@@ -80,10 +82,10 @@ export const NAV_ITEMS = [
 
 // RIGHT BAR
 export const RIGHT_BAR_FOTER = [
-  {label: "Terms of Service", url: "#"},
-  {label: "Privacy Policy", url: "#"},
-  {label: "Cookie Policy", url: "#"},
-  {label: "Accessibility", url: "#"},
-  {label: "Ads Info", url: "#"},
-  {label: "©2025 M&M", url: "#"},
+  { label: "Terms of Service", url: "#" },
+  { label: "Privacy Policy", url: "#" },
+  { label: "Cookie Policy", url: "#" },
+  { label: "Accessibility", url: "#" },
+  { label: "Ads Info", url: "#" },
+  { label: "©2025 M&M", url: "#" },
 ];

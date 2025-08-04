@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Recommendations () {
+export default function Recommendations() {
   return (
     <div className="border-[1px] border-border-gray rounded-2xl">
       <div className="flex flex-col">
@@ -10,11 +10,8 @@ export default function Recommendations () {
         </span>
 
         {/* LIST USER INFO CARD */}
-        {[...Array(3)].map((_, index) => (
-          <div
-            key={index}
-            className="px-4 py-3 hover:bg-neutral-950 cursor-pointer"
-          >
+        {[...Array(3)].map((_, index) =>(
+          <div key={index} className="px-4 py-3 hover:bg-neutral-950 cursor-pointer">
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-3">
                 <div className="rounded-full overflow-hidden w-10 h-10">
@@ -36,6 +33,7 @@ export default function Recommendations () {
             </div>
           </div>
         ))}
+
 
         <div className="px-4 py-3 text-right">
           <Link href="/" className="text-blue-400 hover:text-blue-600">

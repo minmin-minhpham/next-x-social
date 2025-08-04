@@ -1,9 +1,8 @@
 "use client";
-
 import { useEffect, useRef } from "react";
-import SearchBar from "../home/SearchBar";
-import PopularTags from "../home/PopularTags";
-import Recommendations from "../home/Recommendations";
+import SearchBar from "../ui/input/SearchBar";
+import PopularTags from "./PopularTags";
+import Recommendations from "./Recommendations";
 import FoterBar from "./FoterBar";
 
 export default function RightBar() {
@@ -44,7 +43,7 @@ export default function RightBar() {
 
       if (!isScrollingUp && !content.style.top) {
         spacer.style.marginTop = `${currentScrollY + contentRect.top}px`;
-  
+
         content.style.top = `${-hiddenHeight}px`;
         content.style.bottom = "";
       }

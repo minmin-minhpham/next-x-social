@@ -1,20 +1,16 @@
-import Link from "next/link";
-
-import { InfoMoreIcon, LogoIcon } from "../icons";
 import { NAV_ITEMS } from "@/config/constants";
+import { InfoMoreIcon, LogoIcon } from "../icons";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function LeftBar() {
   return (
     <div className="h-screen sticky flex flex-col justify-between top-0 pt-2">
-      {/* NAV_BAR */}
+      {/* MENU */}
       <div className="flex flex-col gap-4 text-lg items-center xl:items-start">
-        {/* LOGO */}
         <Link href="/" className="p-2 rounded-full hover:bg-neutral-800">
           <LogoIcon className="fill-white h-7 w-7" />
         </Link>
-
-        {/* Menu */}
         <nav className="flex flex-col gap-1.5">
           {NAV_ITEMS.map((item) => (
             <Link
@@ -28,12 +24,12 @@ export default function LeftBar() {
           ))}
         </nav>
 
-        <Link
+        {/* <Link
           href={"/login"}
           className="px-4 py-2 bg-black text-white rounded-md"
         >
           login!
-        </Link>
+        </Link> */}
       </div>
 
       {/* USER */}

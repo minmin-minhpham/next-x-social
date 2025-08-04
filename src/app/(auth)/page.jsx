@@ -1,8 +1,10 @@
 "use client";
-import{ AppleButton, GoogleButton} from "@/components/auth";
+
+import Link from "next/link";
+
+import { AppleButton, GoogleButton } from "@/components/auth";
 import { LogoIcon } from "@/components/icons";
 import { AUTH_NAV_ITEMS } from "@/config/constants";
-import Link from "next/link";
 
 export default function WelcomePage() {
   return (
@@ -11,7 +13,6 @@ export default function WelcomePage() {
         <div className="hidden lg:flex flex-col w-full justify-center ">
           <LogoIcon className="fill-foreground h-[350px] w-auto p-5" />
         </div>
-
         <div className="flex mx-auto max-w-[600px] lg:max-w-full lg:w-[85%] lg:mx-0">
           <div className="flex flex-col justify-center w-full p-9 pt-12 lg:p-0">
             <LogoIcon className="lg:hidden fill-foreground w-[35px] h-[35px] " />

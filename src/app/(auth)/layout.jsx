@@ -1,4 +1,4 @@
-export default function AuthLayout({ children, modal }) {
+export default function Layout({ children, modal }) {
   return (
     <>
       {children}
